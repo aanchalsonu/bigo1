@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int i;
+    long int a,b,c,t,sum1,sum2,sum3;
+    scanf("%ld",&t);
+    for(i=0;i<t;i++)
+    {
+        scanf("%ld%ld%ld",&a,&b,&c);
+        sum1 = (a+b);
+        sum2 = (b+c);
+        sum3 = (c+a);
+        if((sum1 == c) || (sum2 == a)|| (sum3 == b) )
+        {
+            printf("YES\n");
+        }
+        else 
+            printf("NO\n");
+    }    
+        
+        
+    return 0;
+}
